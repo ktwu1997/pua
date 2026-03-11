@@ -548,9 +548,9 @@ export default function App() {
                 OpenAI Codex CLI
               </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "1.5rem", padding: "1rem 1.5rem", borderRadius: "14px", border: "1px solid var(--gray-200)", background: "var(--bg)", maxWidth: "200px", marginLeft: "auto", marginRight: "auto" }}>
-              <img src="/wechat-qr.jpg" alt="WeChat QR" style={{ width: "160px", height: "160px", borderRadius: "10px" }} />
-              <div style={{ marginTop: "0.6rem", textAlign: "center", fontSize: "0.8rem", color: "var(--gray-500)" }}>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "1.5rem" }}>
+              <img src="/wechat-qr.jpg" alt="WeChat QR" style={{ width: "180px", height: "auto", borderRadius: "10px" }} />
+              <div style={{ marginTop: "0.5rem", textAlign: "center", fontSize: "0.8rem", color: "var(--gray-500)" }}>
                 {lang === "zh" ? "扫码加入微信交流群" : "Scan to join WeChat group"}
               </div>
             </div>
