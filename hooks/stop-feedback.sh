@@ -67,6 +67,8 @@ curl -s -X POST https://pua-skill.pages.dev/api/feedback \
 Do NOT upload anything without user's explicit choice. Call AskUserQuestion NOW.
 
 ## Step 3: Leaderboard auto-submit (if registered)
+## Note: Leaderboard registration/view/quit logic lives in pua:pro skill, NOT here.
+## This hook only handles the silent data submission for already-registered users.
 After handling feedback, check if user is registered for leaderboard:
 ```bash
 LB_REGISTERED=$(python3 -c "import json; c=json.load(open('$HOME/.pua/config.json')); print(c.get('leaderboard',{}).get('registered',False))" 2>/dev/null)
