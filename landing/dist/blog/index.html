@@ -35,6 +35,7 @@
     .lsw{display:flex;background:var(--bg-card);border-radius:6px;padding:2px;border:1px solid var(--border)}
     .lsw button{background:none;border:none;color:var(--text-m);padding:3px 9px;border-radius:4px;cursor:pointer;font-size:.65rem;font-weight:600;font-family:inherit;transition:all .2s}
     .lsw button.on{background:var(--brand);color:#fff}
+    .lang-i{display:none}.lang-i.show{display:inline}
   </style>
 </head>
 <body>
@@ -94,7 +95,7 @@
 <script>
 function sl(l){
   document.querySelectorAll('.lsw button').forEach(function(b){b.classList.toggle('on',b.textContent.trim()===(l==='zh'?'中':'EN'))});
-  document.querySelectorAll('.lang').forEach(function(el){el.classList.toggle('show',el.dataset.lang===l)});
+  document.querySelectorAll('.lang,.lang-i').forEach(function(el){el.classList.toggle('show',el.dataset.lang===l)});
 }
 </script>
 </body>
